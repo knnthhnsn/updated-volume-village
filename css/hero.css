@@ -313,24 +313,11 @@
 
 @media (max-width: 1024px) {
 
-    /* Fast højde for hele hero sektionen - undgår vh-hoppen */
-    .vv-hero-bridge {
-        height: 100svh;
-        /* svh = small viewport height, stabil på mobil */
-    }
-
     /* Fjern den tunge glød-effekt på solen */
     .vv-hero-bridge__sun {
-        position: absolute;
-        /* Skift fra fixed til absolute for stabilitet */
         filter: none;
+        /* Ingen drop-shadow beregninger på mobil */
         transition: opacity 0.25s linear;
-    }
-
-    /* Skift stjerner fra fixed til absolute */
-    .vv-hero-bridge__stars {
-        position: absolute;
-        height: 100%;
     }
 
     /* Forenklet stjerner - kun ét lag i stedet for tre */
