@@ -332,15 +332,19 @@
         display: none;
     }
 
-    /* Reducer bro-højde for bedre ydelse */
+    /* 
+       Bro-højde: Fast pixelværdi på mobil for at undgå "hoppen".
+       Mobil-browsere ændrer vh når adresselinjen skjules/vises,
+       hvilket får vh-baserede elementer til at resizing under scroll.
+    */
     .vv-hero-bridge__bridge {
-        height: min(40vh, 280px);
+        height: 220px;
     }
 
-    /* Juster bil-position til den lavere bro */
+    /* Juster bil-position til den faste bro-højde */
     .vv-hero-bridge__car--left,
     .vv-hero-bridge__car--right {
-        bottom: calc(min(40vh, 280px) - 5px);
+        bottom: 215px;
     }
 
     /* Mindre biler på mobil */
