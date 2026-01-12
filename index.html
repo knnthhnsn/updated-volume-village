@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Village - Events, Koncerter og Kulturhus i Aarhus</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <meta name="description"
+        content="Oplev det bedste inden for live musik, raves og kultur under Ringgadebroen. Volume Village er Aarhus nye spillested og klub for elektronisk musik og undergrundskultur.">
+
+    <!-- Skrifttyper -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Stilark -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <link rel="stylesheet" href="css/video-scroll.css">
+    <style>
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vv-hero-bridge__stars"></div>
+
+    <!-- Header -->
+    <!-- Fullscreen nav -->
+    <div class="bold-nav-full" data-navigation-status="not-active">
+
+        <!-- Top bar -->
+        <div class="bold-nav-full__bar">
+            <!-- Default logo (styres af scroll) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--default">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+
+            <!-- Active logo (altid orange, bruges kun når menu er åben) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--active">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+
+            <!-- Default burger (styres af scroll) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--default" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+
+            <!-- Active burger (altid orange, bruges når menu er åben) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--active" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Tile / menu overlay -->
+        <div class="bold-nav-full__tile">
+
+            <!-- Menu list -->
+            <ul class="bold-nav-full__ul">
+
+                <li class="bold-nav-full__li bold-nav-full__li--forside">
+                    <a href="index.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">FORSIDE</span>
+                    </a>
+                </li>
+
+                <li class="bold-nav-full__li bold-nav-full__li--koncerter">
+                    <a href="#events" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONCERTER</span>
+                    </a>
+                </li>
+
+                <li class="bold-nav-full__li bold-nav-full__li--galleri">
+                    <a href="galleri.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">GALLERI</span>
+                    </a>
+                </li>
+
+                <li class="bold-nav-full__li bold-nav-full__li--kontakt">
+                    <a href="#" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONTAKT</span>
+                    </a>
+                </li>
+
+                <li class="bold-nav-full__li bold-nav-full__li--frivillig">
+                    <a href="frivillig.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">BLIV FRIVILLIG</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Stickers wrapper -->
+            <div class="bold-nav-full__stickers">
+
+                <!-- Forside -->
+                <div class="stickers-group stickers-group--forside">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                </div>
+
+                <!-- Koncerter -->
+                <div class="stickers-group stickers-group--koncerter">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                </div>
+
+                <!-- Galleri -->
+                <div class="stickers-group stickers-group--galleri">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                </div>
+
+                <!-- Kontakt -->
+                <div class="stickers-group stickers-group--kontakt">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+
+                <!-- Bliv frivillig -->
+                <div class="stickers-group stickers-group--frivillig">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="bold-nav__bottom">
+                <p class="bold-nav__word">VOLUME VILLAGE © 2025</p>
+            </div>
+
+        </div> <!-- /.bold-nav-full__tile -->
+    </div> <!-- /.bold-nav-full -->
+
+    <main>
+        <!-- Hero Sektion -->
+        <section class="vv-hero-bridge">
+            <div class="vv-hero-bridge__inner">
+                <!-- Tekst-område -->
+                <div class="vv-hero-bridge__content">
+                    <h1 class="vv-hero-bridge__title">
+                        MUSIK OG<br>
+                        KUNST UNDER<br>
+                        RINGGADEBROEN
+                    </h1>
+                    <p class="vv-hero-bridge__text">
+                        Volume Village er stedet, hvor undergrundskulturen møder større kunstnere.
+                        Her finder du koncerter, kunstudstillinger og en stemning som ingen anden ved Godsbanen.
+                    </p>
+                </div>
+
+                <!-- Sol -->
+                <div class="vv-hero-bridge__sun-wrap">
+                    <img src="assets/images/volume-hero/sol.png" class="vv-hero-bridge__sun" alt="Sol">
+                </div>
+
+                <!-- Bridge-layer (grundbro) -->
+                <div class="vv-hero-bridge__bridge"></div>
+
+                <!-- Bridge overlay (bro2, der fader ind med scroll) -->
+                <div class="vv-hero-bridge__bridge vv-hero-bridge__bridge--overlay"></div>
+
+
+                <!-- Bil 1 (venstre til)-->
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--left"><img
+                        src="assets/images/volume-hero/bil2.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--left"><img
+                        src="assets/images/volume-hero/bil2.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--left"><img
+                        src="assets/images/volume-hero/bil2.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--left"><img
+                        src="assets/images/volume-hero/bil2.png"></div>
+                <!-- Bil 2 (højre til venstre) -->
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--right"><img
+                        src="assets/images/volume-hero/bil.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--right"><img
+                        src="assets/images/volume-hero/bil.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--right"><img
+                        src="assets/images/volume-hero/bil.png"></div>
+                <div class="vv-hero-bridge__car vv-hero-bridge__car--right"><img
+                        src="assets/images/volume-hero/bil.png"></div>
+
+        </section>
+
+        <!-- Events Sektion -->
+        <section class="section events-section" id="events">
+            <div class="container">
+                <h2 class="section-title">Musikinspiration</h2>
+                <p class="section-desc">Vi har samlet alt fra de store hovednavne til den rå undergrund. Scroll gennem
+                    programmet og find din favorit, eller lad skæbnen bestemme med Random-knappen. Måske finder du din
+                    nye yndlingsartist i aften.
+                </p>
+            </div>
+
+            <div class="slider-container" id="event-slider">
+                <!-- Event kort vil blive indsat her eller hardcoded -->
+                <div class="slider-track">
+                    <!-- Kort 1 -->
+                    <a href="smogmaend.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">TIR<br>06<br>FEB</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/smogmend-event.png" alt="Smøgmænd Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Undergrundsrap</span>
+                            <h3 class="artist-name">SMØGMÆND <span class="star-icon">★</span></h3>
+                            <p class="event-desc">En aften med tunge beats og lyrik.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <!-- Kort 2 -->
+                    <a href="late-night.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">FRE<br>10<br>MAR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/singer-bg.jpg" alt="Late Night Event"
+                                style="filter: hue-rotate(240deg) contrast(1.2);">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Techno</span>
+                            <h3 class="artist-name">LATE NIGHT <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Dyb bas og sort rytmik hele natten.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <!-- Kort 3 (Bladee) -->
+                    <a href="bladee.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">LØR<br>15<br>APR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/bladee-event.jpg" alt="Bladee Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Cloud rap</span>
+                            <h3 class="artist-name">BLADEE <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Oplev de æteriske lyde af cloud rap.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <!-- Kort 4 (Kidd) -->
+                    <a href="kidd.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">FRE<br>21<br>APR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/kidd-event.jpg" alt="Kidd Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Hip hop</span>
+                            <h3 class="artist-name">KIDD <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Dansk hip hop legende live på scenen.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <!-- Kopier for scroll effekt -->
+                    <a href="smogmaend.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">TIR<br>06<br>FEB</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/smogmend-event.png" alt="Smøgmænd Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Undergrundsrap</span>
+                            <h3 class="artist-name">SMØGMÆND <span class="star-icon">★</span></h3>
+                            <p class="event-desc">En aften med tunge beats og lyrik.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <a href="late-night.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">FRE<br>10<br>MAR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/singer-bg.jpg" alt="Late Night Event"
+                                style="filter: hue-rotate(240deg) contrast(1.2);">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Techno</span>
+                            <h3 class="artist-name">LATE NIGHT <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Dyb bas og sort rytmik hele natten.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <a href="bladee.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">LØR<br>15<br>APR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/bladee-event.jpg" alt="Bladee Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Cloud rap</span>
+                            <h3 class="artist-name">BLADEE <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Oplev de æteriske lyde af cloud rap.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                    <a href="kidd.html" class="event-card" style="text-decoration: none; color: inherit;">
+                        <span class="date-badge">FRE<br>21<br>APR</span>
+                        <div class="card-image-wrapper">
+                            <img src="assets/images/kunstner/kidd-event.jpg" alt="Kidd Event">
+                        </div>
+                        <div class="card-content">
+                            <span class="tag">Hip hop</span>
+                            <h3 class="artist-name">KIDD <span class="star-icon">★</span></h3>
+                            <p class="event-desc">Dansk hip hop legende live på scenen.</p>
+                            <span class="card-link">BLIV FRIVILLIG &gt;</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="event-controls-wrapper">
+                    <div class="slider-controls">
+                        <button class="slider-btn prev">&lt;</button>
+                        <button class="slider-btn next">&gt;</button>
+                    </div>
+                    <button class="slider-btn random-btn" title="Random Concert">RANDOM</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galleri Sektion -->
+        <section class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title">GALLERI STEMNING OG RAVES</h2>
+            </div>
+            <div class="gallery-slider-wrapper" style="position: relative;">
+                <div class="gallery-slider" id="gallery-slider">
+                    <div class="gallery-track">
+                        <!-- Pladsholder billeder gentaget for demo -->
+                        <a href="galleri.html"><img src="assets/images/galleri/DSC00046.jpg"
+                                alt="Volume Village koncert stemning"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/DSC00110.jpg" alt="Rave i Aarhus"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/DSC00232.jpg"
+                                alt="Elektronisk musik event"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/DSC00628.jpg"
+                                alt="Live musik Aarhus"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/_DSC1273.jpg"
+                                alt="Kulturhus Aarhus events"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/_DSC1795.jpg"
+                                alt="Undergrundskultur Aarhus"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/_DSC2318.jpg"
+                                alt="Volume Village fest"></a>
+                        <a href="galleri.html"><img src="assets/images/galleri/_DSC2767.jpg"
+                                alt="Koncert ved Volume Village"></a>
+                    </div>
+                </div>
+                <div class="slider-controls gallery-controls">
+                    <button class="slider-btn prev-gallery">&lt;</button>
+                    <button class="slider-btn next-gallery">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Sektion -->
+        <section class="cta-section">
+            <div class="container cta-layout">
+                <div class="cta-text">
+                    <h2 class="cta-title">BLIV EN DEL AF AARHUS FEDESTE KLUB</h2>
+                    <a href="#events" class="btn btn-primary">BLIV FRIVILLIG</a>
+                </div>
+                <div class="cta-image">
+                    <img src="assets/images/galleri/ugens-galleri-billede.webp" alt="Crowd experience">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Scroll Sektion -->
+        <section class="video-scroll-section">
+            <div class="sticky-wrapper">
+                <!-- Bruger muted, playsinline, og preload for bedste scroll performance -->
+                <video src="assets/images/FRDIG-Volumen-kontrol.mp4" class="scroll-video" muted playsinline
+                    preload="auto"></video>
+                <button class="video-sound-toggle" aria-label="Toggle Sound">
+                    <span class="mute-icon">🔇</span>
+                    <span class="unmute-icon" style="display: none;">🔊</span>
+                </button>
+                <div class="video-overlay-cta"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; text-align: center;">
+                    <a href="frivillig.html" class="btn btn-primary">BLIV FRIVILLIG</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nyhedsbrev Sektion -->
+        <section class="section newsletter-section">
+            <div class="container">
+                <h2 class="auth-title">BLIV HOLDT <br> HELT OPDATERET</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Din email" required>
+                    <button type="submit" class="btn btn-primary">TILMELD</button>
+                </form>
+                <p class="privacy-note">Vi deler ikke din mail med andre.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.svg" alt="Volume Village Logo" width="150">
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="index.html#events">Koncerter</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+                <li><a href="frivillig.html">Bliv Frivillig</a></li>
+            </ul>
+            <div class="footer-socials">
+                <!-- Sociale Ikoner -->
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <!-- X logo bruger normalt twitter ikon eller brugerdefineret SVG, bruger twitter for nu som standard -->
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+
+
+            </div>
+            <div class="container footer-bottom">
+                <p>&copy; 2025 Volume Village. Alle rettigheder forbeholdt. Privatlivspolitik | Betingelser for brug |
+                    Cookie indstillinger</p>
+            </div>
+    </footer>
+
+    <!-- Skripter -->
+    <script src="js/main.js"></script>
+    <script src="js/event-slider.js"></script>
+    <script src="js/gallery-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/hero.js"></script>
+
+    <script src="js/video-scroll.js"></script>
+</body>
+
+</html>

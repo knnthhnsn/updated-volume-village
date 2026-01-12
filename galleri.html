@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleri - Volume Village</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <meta name="description"
+        content="Se billeder fra koncerter, kunst og events i Volume Village. Oplev stemningen under Ringgadebroen.">
+
+    <!-- Skrifttyper -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Stilark -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/galleri.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fullscreen nav -->
+    <div class="bold-nav-full" data-navigation-status="not-active">
+        <!-- Top bar -->
+        <div class="bold-nav-full__bar">
+            <!-- Default logo (styres af scroll) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--default">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+            <!-- Active logo (altid orange, bruges kun når menu er åben) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--active">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+            <!-- Default burger (styres af scroll) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--default" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+            <!-- Active burger (altid orange, bruges når menu er åben) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--active" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+        </div>
+        <!-- Tile / menu overlay -->
+        <div class="bold-nav-full__tile">
+            <!-- Menu list -->
+            <ul class="bold-nav-full__ul">
+                <li class="bold-nav-full__li bold-nav-full__li--forside">
+                    <a href="index.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">FORSIDE</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--koncerter">
+                    <a href="index.html#events" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONCERTER</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--galleri">
+                    <a href="galleri.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">GALLERI</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--kontakt">
+                    <a href="frivillig.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONTAKT</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--frivillig">
+                    <a href="frivillig.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">BLIV FRIVILLIG</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Stickers wrapper -->
+            <div class="bold-nav-full__stickers">
+                <!-- Forside -->
+                <div class="stickers-group stickers-group--forside">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                </div>
+                <!-- Koncerter -->
+                <div class="stickers-group stickers-group--koncerter">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                </div>
+                <!-- Galleri -->
+                <div class="stickers-group stickers-group--galleri">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                </div>
+                <!-- Kontakt -->
+                <div class="stickers-group stickers-group--kontakt">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+                <!-- Bliv frivillig -->
+                <div class="stickers-group stickers-group--frivillig">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div class="bold-nav__bottom">
+                <p class="bold-nav__word">VOLUME VILLAGE © 2025</p>
+            </div>
+        </div> <!-- /.bold-nav-full__tile -->
+    </div> <!-- /.bold-nav-full -->
+
+    <main>
+
+        <!-- Hero Content -->
+        <section class="section artist-intro" style="padding-top: 150px;">
+            <div class="container">
+                <h2 class="section-title">UGENS BILLEDE</h2>
+                <p class="section-desc">Dette billede er delt på Instagram med <span
+                        class="highlight">#volumevillage</span></p>
+                <div class="featured-image-wrapper">
+                    <img src="assets/images/galleri/ugens-galleri-billede.webp" alt="Ugens Billede - Crowd"
+                        class="featured-img">
+                    <div class="insta-tag-overlay">
+                        <ion-icon name="logo-instagram"></ion-icon> @volumevillage
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galleri Grid Sektion -->
+        <section class="section gallery-grid-section">
+            <div class="container">
+                <h2 class="section-title">GALLERIET</h2>
+                <p class="section-desc">Billeder fra koncerter, kunst fra vores Ringgadebroen</p>
+
+                <div class="gallery-grid">
+                    <!-- Grid Elementer -->
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/DSC00046.jpg" alt="Gallery Image 1">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/DSC00110.jpg" alt="Gallery Image 2">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/DSC00232.jpg" alt="Gallery Image 3">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/DSC00628.jpg" alt="Gallery Image 4">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/_DSC1273.jpg" alt="Gallery Image 5">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/galleri/_DSC1795.jpg" alt="Gallery Image 6">
+                        <div class="item-overlay">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Del Sektion -->
+        <section class="section share-section">
+            <div class="container share-content">
+                <div class="share-text">
+                    <h2 class="section-title">DEL DIT BILLEDE MED OS</h2>
+                    <p class="section-desc">Brug <span class="highlight">#volumevillage</span> på Instagram og oplev
+                        levende nye billeder i galleriet</p>
+                </div>
+                <div class="share-action">
+                    <a href="#" class="btn btn-primary"><ion-icon name="logo-instagram"
+                            style="margin-right:8px; vertical-align:middle;"></ion-icon> INSTAGRAM</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.svg" alt="Volume Village Logo" width="150">
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="index.html#events">Koncerter</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+                <li><a href="frivillig.html">Bliv Frivillig</a></li>
+            </ul>
+            <div class="footer-socials">
+                <!-- Sociale Ikoner -->
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <!-- X logo bruger normalt twitter ikon eller brugerdefineret SVG, bruger twitter for nu som standard -->
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Volume Village. Alle rettigheder forbeholdt. Privatlivspolitik | Betingelser for brug |
+                Cookie indstillinger</p>
+        </div>
+    </footer>
+
+    <!-- Skripter -->
+    <script src="js/galleri.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/hero.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smøgmænd - Volume Village</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <meta name="description" content="Oplev Smøgmænd live på Volume Village. Undergrundsrap og rå energi i Aarhus.">
+
+    <!-- Skrifttyper -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Stilark -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/artist.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        html.lenis {
+            height: auto;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fullscreen nav -->
+    <div class="bold-nav-full" data-navigation-status="not-active">
+        <!-- Top bar -->
+        <div class="bold-nav-full__bar">
+            <!-- Default logo (styres af scroll) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--default">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+            <!-- Active logo (altid orange, bruges kun når menu er åben) -->
+            <a href="index.html" class="bold-nav-full__logo bold-nav-full__logo--active">
+                <img src="assets/images/volume-hero/logo.svg" alt="Volume Village logo">
+            </a>
+            <!-- Default burger (styres af scroll) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--default" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+            <!-- Active burger (altid orange, bruges når menu er åben) -->
+            <button class="bold-nav-full__hamburger bold-nav-full__hamburger--active" data-navigation-toggle="toggle">
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+                <span class="bold-nav-full__hamburger-bar">
+                    <span class="bold-nav-full__hamburger-bar-inner"></span>
+                </span>
+            </button>
+        </div>
+        <!-- Tile / menu overlay -->
+        <div class="bold-nav-full__tile">
+            <!-- Menu list -->
+            <ul class="bold-nav-full__ul">
+                <li class="bold-nav-full__li bold-nav-full__li--forside">
+                    <a href="index.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">FORSIDE</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--koncerter">
+                    <a href="index.html#events" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONCERTER</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--galleri">
+                    <a href="galleri.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">GALLERI</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--kontakt">
+                    <a href="frivillig.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">KONTAKT</span>
+                    </a>
+                </li>
+                <li class="bold-nav-full__li bold-nav-full__li--frivillig">
+                    <a href="frivillig.html" class="bold-nav-full__link">
+                        <span class="bold-nav-full__link-text">BLIV FRIVILLIG</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Stickers wrapper -->
+            <div class="bold-nav-full__stickers">
+                <!-- Forside -->
+                <div class="stickers-group stickers-group--forside">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                </div>
+                <!-- Koncerter -->
+                <div class="stickers-group stickers-group--koncerter">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/lyd.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                </div>
+                <!-- Galleri -->
+                <div class="stickers-group stickers-group--galleri">
+                    <img src="assets/images/volume-hero/hjerte2.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                </div>
+                <!-- Kontakt -->
+                <div class="stickers-group stickers-group--kontakt">
+                    <img src="assets/images/volume-hero/hjerte1.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+                <!-- Bliv frivillig -->
+                <div class="stickers-group stickers-group--frivillig">
+                    <img src="assets/images/volume-hero/stjerne.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/rids.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/smiley.svg" class="sticker" alt="">
+                    <img src="assets/images/volume-hero/hjerte3.svg" class="sticker" alt="">
+                </div>
+            </div>
+            <!-- Bottom -->
+            <div class="bold-nav__bottom">
+                <p class="bold-nav__word">VOLUME VILLAGE © 2025</p>
+            </div>
+        </div> <!-- /.bold-nav-full__tile -->
+    </div> <!-- /.bold-nav-full -->
+
+    <main>
+
+        <!-- Tidligere Hero Sektion nu som indhold -->
+        <section class="section artist-intro" style="padding-top: 150px;">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-image-col">
+                        <img src="assets/images/kunstner/smogmend.webp" alt="Smøgmænd">
+                    </div>
+                    <div class="hero-info-col">
+                        <h2 class="artist-title-large">SMØGMÆND</h2>
+                        <p class="artist-bio">
+                            Smøgmænd er lyden af den danske undergrund, når den er mest ærlig og rå.
+                            Med tekster der kredser om storbylivet, nattens skyggesider og eufori, leverer de en
+                            koncertoplevelse ud over det sædvanlige.
+                            Forvent høj energi, tunge beats og en crowd der koger.
+                        </p>
+
+                        <div class="genre-tags">
+                            <span class="genre-tag">Undergrundsrap</span>
+                            <span class="genre-tag">Hip Hop</span>
+                            <span class="genre-tag">Urban</span>
+                        </div>
+
+                        <div class="music-player-placeholder">
+                            <img src="assets/images/smogmend-spotify-embed.jpg" alt="Smøgmænd Spotify"
+                                style="width: 100%; height: auto; display: block; border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Sektion -->
+        <section class="program-section">
+            <div class="container">
+                <h2 class="program-title">PROGRAM</h2>
+                <p class="program-subtitle">EN AFTEN I RAPPENS TEGN</p>
+
+                <div class="timeline">
+                    <div class="timeline-row">
+                        <div class="time">19:00</div>
+                        <div class="event-details">
+                            <span class="event-name">DØRENE ÅBNER</span>
+                            <span class="event-tag">Bar</span>
+                        </div>
+                        <button class="buy-btn-small">LÆS MERE</button>
+                    </div>
+                    <div class="program-content">
+                        Vi åbner dørene til Volume Village. Kom ind og få varmen og en kold øl.
+                    </div>
+                    <div class="timeline-row">
+                        <div class="time">20:30</div>
+                        <div class="event-details">
+                            <span class="event-name">LOCAL SUPPORT</span>
+                            <span class="event-tag">Live</span>
+                        </div>
+                        <button class="buy-btn-small">LÆS MERE</button>
+                    </div>
+                    <div class="program-content">
+                        Support er håndplukket lokalt talent. Kom og støt op om undergrunden.
+                    </div>
+                    <div class="timeline-row">
+                        <div class="time">22:00</div>
+                        <div class="event-details">
+                            <span class="event-name">SMØGMÆND</span>
+                            <span class="event-tag">HOVEDNAVN</span>
+                        </div>
+                        <button class="buy-btn-small">LÆS MERE</button>
+                    </div>
+                    <div class="program-content">
+                        Smøgmænd leverer aftenens hovedshow med gæsteoptrædener og overraskelser.
+                    </div>
+                    <div class="timeline-row">
+                        <div class="time">23:30</div>
+                        <div class="event-details">
+                            <span class="event-name">DJ SET</span>
+                            <span class="event-tag">Lounge</span>
+                        </div>
+                        <button class="buy-btn-small">LÆS MERE</button>
+                    </div>
+                    <div class="program-content">
+                        Festen slutter ikke her! Vores hus-DJ vender plader i loungen.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Billet Sektion -->
+        <section class="ticket-section">
+            <div class="container">
+                <h2 class="ticket-title">TAG PLADS NU</h2>
+                <p class="ticket-desc">KONCERTEN KOMMER DU SKAL VÆRE DER NÅR DET SKER</p>
+                <a href="#" class="btn btn-primary">KØB BILLET</a>
+            </div>
+        </section>
+
+        <!-- Tidligere Shows Sektion -->
+        <section class="earlier-shows-section">
+            <div class="container">
+                <h2 class="earlier-shows-title">Tidligere shows</h2>
+                <p
+                    style="text-align: center; margin-top: -30px; margin-bottom: 40px; font-family: var(--font-heading); text-transform: uppercase;">
+                    Tilbageblik på karrieren</p>
+
+                <div class="show-display">
+                    <div class="show-image">
+                        <img src="assets/images/kunstner/smogmend-event.png" alt="Smøgmænd Live"
+                            style="max-height: 400px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="show-info">
+                        <h3
+                            style="font-family: var(--font-heading); font-size: 2rem; text-transform: uppercase; margin-bottom: 10px;">
+                            Fra Kælder til Scene</h3>
+                        <p>Smøgmænd startede i de små klubber og har nu indtaget de større scener med samme intensitet
+                            og integritet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Sektion -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="faq-title">FAQ</h2>
+                <p style="margin-bottom: 30px; color: #aaa;">Praktisk info</p>
+
+                <div class="accordion">
+                    <!-- Fra Bladee -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">HVOR ER INDGANGEN?</div>
+                        <div class="accordion-content">
+                            Indgangen er placeret på gadeplan under Ringgadebroen. Følg skiltene med Volume Village
+                            logoet.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">HVAD MÅ MAN TAGE MED?</div>
+                        <div class="accordion-content">
+                            Du må ikke medbringe egne drikkevarer eller mad. Tasker bliver tjekket i døren.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">HVORNÅR KOMMER HOVEDNAVNET?</div>
+                        <div class="accordion-content">
+                            Som regel går hovednavnet på scenen omkring kl. 22:30, men tjek programmet ovenfor for
+                            specifikke tider.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">KAN JEG KØBE BILLET I DØREN?</div>
+                        <div class="accordion-content">
+                            Hvis koncerten ikke er udsolgt, sælges der BLIV FRIVILLIG i døren. Vi anbefaler altid at
+                            købe i
+                            forsalg.
+                        </div>
+                    </div>
+                    <!-- Fra Kidd -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">KAN MAN BOOKE BORD?</div>
+                        <div class="accordion-content">
+                            Vi tilbyder ikke bordbooking til denne koncert, da det er ståpladser.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">HANDICAPFORHOLD?</div>
+                        <div class="accordion-content">
+                            Der er rampe til kørestolsbrugere og handicaptoilet. Kontakt os gerne i forvejen for
+                            ledsagerordning.
+                        </div>
+                    </div>
+                    <!-- Fra Smøgmænd -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">KAN MAN KØBE MERCHANDISE?</div>
+                        <div class="accordion-content">
+                            Ja, der vil være en stand med t-shirts og vinyler i foyeren før og efter koncerten.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">ER DER GARDEROBE?</div>
+                        <div class="accordion-content">
+                            Ja, vi har bemandet garderobe i kælderen. Det koster 20 kr. pr. del.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">ALDERSGRÆNSE?</div>
+                        <div class="accordion-content">
+                            Arrangementet er 18+, husk gyldigt billed-ID.
+                        </div>
+                    </div>
+                    <!-- Fra Late Night -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">HVORNÅR LUKKER I?</div>
+                        <div class="accordion-content">
+                            Vi lukker først når solen står op. Officielt slutter musikken kl. 05:00.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">DRESSCODE?</div>
+                        <div class="accordion-content">
+                            Kom som du er. Vi elsker diversitet og personlig stil.
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">ER DER STROBOSKOPLYS?</div>
+                        <div class="accordion-content">
+                            Ja, der vil blive brugt kraftigt stroboskoplys og røgmaskiner under hele koncerten.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mere at vide subsection -->
+                <div class="more-info-subsection">
+                    <h2 class="section-title" style="font-size: 2rem;">MERE AT VIDE</h2>
+                    <p style="color: #aaa;">Hold dig opdateret på vores sociale medier</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 20px;">FØLG OS</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.svg" alt="Volume Village Logo" width="150">
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="index.html#events">Koncerter</a></li>
+                <li><a href="galleri.html">Galleri</a></li>
+                <li><a href="frivillig.html">Bliv Frivillig</a></li>
+            </ul>
+            <div class="footer-socials">
+                <!-- Sociale Ikoner -->
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <!-- X logo bruger normalt twitter ikon eller brugerdefineret SVG, bruger twitter for nu som standard -->
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 Volume Village. Alle rettigheder forbeholdt. Privatlivspolitik | Betingelser for brug |
+                Cookie indstillinger</p>
+        </div>
+    </footer>
+
+    <!-- Skripter -->
+    <script src="js/main.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/hero.js"></script>
+</body>
+
+</html>
