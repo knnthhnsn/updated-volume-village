@@ -352,9 +352,9 @@
 /* Endnu mere aggressiv forenkling på telefoner */
 @media (max-width: 480px) {
 
-    /* Skjul bilerne helt på meget små skærme */
-    .vv-hero-bridge__car {
-        display: none;
+    /* Biler vises, men endnu mindre */
+    .vv-hero-bridge__car img {
+        width: 45px;
     }
 
     /* Skjul stjerner for at spare GPU */

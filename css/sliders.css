@@ -396,3 +396,26 @@
     color: var(--accent-orange);
     transform: scale(1.1);
 }
+
+
+/* =========================================
+   MOBIL/TABLET: Random knap til venstre
+   ========================================= */
+
+@media (max-width: 1024px) {
+    .event-controls-wrapper {
+        /* Ændret layout: Knap venstre, pile højre */
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .slider-btn.random-btn {
+        grid-column: 1;
+        /* Flyttet til venstre kolonne */
+        justify-self: start;
+    }
+
+    .event-controls-wrapper .slider-controls {
+        grid-column: 3;
+        /* Forbliver til højre */
+    }
+}
